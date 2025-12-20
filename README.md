@@ -19,5 +19,7 @@ Using Gin framework, sqlite3
 
 ##### Installing Gin
 
+Run this in the Terminal to install Gin:
 
+go get -u github.com/gin-gonic/gin
 
