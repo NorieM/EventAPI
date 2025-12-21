@@ -23,3 +23,18 @@ Run this in the Terminal to install Gin:
 
 go get -u github.com/gin-gonic/gin
 
+#### Event Model
+
+Fields
+| Name        | Type      |
+| ----------- | --------- |
+| ID          | int       |
+| Name        | string    |
+| Description | string    |
+| Location    | string    |
+| DateTime    | time.Time |
+| UserID      | int       |
+
+Methods
+
+Save - saves an event
