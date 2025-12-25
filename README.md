@@ -38,3 +38,9 @@ Fields
 Methods
 
 Save - saves an event
+
+#### Database
+
+Uses sqlite
+
+go get github.com/mattn/go-sqlite3
