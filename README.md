@@ -44,3 +44,8 @@ Save - saves an event
 Uses sqlite
 
 go get github.com/mattn/go-sqlite3
+
+
+#### Security
+
+go get -u golang.org/x/crypto
