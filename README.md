@@ -4,17 +4,17 @@ Using Gin framework, sqlite3
 
 ##### Endpoints
 
-| Request Type | Endpoint | Description|
-| ------------ | -------- | ---------- |
-| GET | /events                     | get a list of available events  
-| GET | /events/<id>                | get an event by id  
-| POST | /events                    | create an event  
-| PUT | /events/<id>                | update an event  
-| DELETE | /events/<id>             | delete an event  
-| POST | /signup                    | create new user  
-| POST | /login                     | authenicate user  
-| POST | /events/<id>/register      | register user for event  
-| DELETE | /events/<id>/register    | cancel registration  
+| Request Type | Endpoint | Description| Security |
+| ------------ | -------- | ---------- | -------- |
+| GET | /events                     | get a list of available events  |
+| GET | /events/<id>                | get an event by id              |
+| POST | /events                    | create an event  | Auth Required
+| PUT | /events/<id>                | update an event  | Auth Required
+| DELETE | /events/<id>             | delete an event  | Auth Required
+| POST | /signup                    | create new user  | 
+| POST | /login                     | authenicate user  | Auth Token (JWT)
+| POST | /events/<id>/register      | register user for event  | Auth Required
+| DELETE | /events/<id>/register    | cancel registration  | Auth Required
 
 
 ##### Installing Gin
